@@ -5,14 +5,16 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
+dockerpath=orikix/sklearnapp
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-
+kubectl run --image=orikix/sklearnapp:1.0 --port=80 sklearnapp
 
 # Step 3:
 # List kubernetes pods
+kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-
+kubectl port-forward --address 0.0.0.0 sklearnapp  8000:80

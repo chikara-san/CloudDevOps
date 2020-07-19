@@ -15,4 +15,4 @@ docker login -u orikix
 
 # Step 3:
 # Push image to a docker repository
-docker push misenli/sklearnapp:1.0
+docker push orikix/sklearnapp:1.0
