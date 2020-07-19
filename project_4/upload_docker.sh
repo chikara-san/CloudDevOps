@@ -6,10 +6,13 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath=orikix
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login -u orikix
 
 # Step 3:
 # Push image to a docker repository
+docker push misenli/sklearnapp:1.0
